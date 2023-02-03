@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+
+}
+
+body {
+    /* font-size: 16px; */
+    background-color: #61122f;
+    font-family: 'oxygen', sans-serif;
+}
+
+.menu-container {
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+}
+
+.menu-container h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 200;
+}
+
+.menu-container p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.menu-col {
+    border: 2px solid black ;
+    position: relative;
+    margin: 10px 20px;
+
+}
+
+.menu-col h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 80;
+    font-size: 19px;
+    opacity: 0.8;
+    background-color: black;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 4px 2px;
+}
+
+.menu-col:hover {
+    /* box-shadow: 2px 3px 8px white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0px 3px 12px white; */
+    box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+
+@media (max-width:768px) {
+
+
+    .menu-row {
+        flex-wrap: wrap;
+    }
+
+}
+
+.menu-header {
+    font-weight: 200;
+}
+
+.menu-spl {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 45px;
+    align-items: flex-start;
+}
+
+.spl-txt {
+    width: 30%;
+    margin-left: 20px;
+    margin-right: 40px;
+    /* border: 1px solid white; */
+}
+
+.spl-txt h2 {
+    font-weight: 200;
+    text-align: justify;
+
+}
+
+.spl-txt p {
+    font-style: italic;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.spl-img {
+    position: relative;
+    border: 2px solid black;
+}
+
+.sp-name {
+    position: absolute;
+    /* border: 1px solid white; */
+    bottom: 0;
+    right: 0;
+    padding: 0px 10px;
+    background-color: #557c3e;
+    text-transform: uppercase;
+}
+
+.spl-rate {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+
+    .menu-spl {
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    .spl-txt {
+        width: 50%;
+    }
+
+    .spl-img {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:767px) {
+    .menu-spl {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid white;
+    }
+
+    .spl-txt {
+        width: 80%;
+        margin: 30px 20px;
+    }
+
+    .spl-txt h2 {
+        text-align: center;
+    }
+
+    .spl-txt p {
+        text-align: center;
+
+    }
+}

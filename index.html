@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment for resturent</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="snippet/special-categories.html">
+</head>
+
+<body>
+    <header>
+
+        <div class="toogle-nav">
+            <span class="nav-icon bar1"></span>
+            <span class="nav-icon bar2"></span>
+            <span class="nav-icon bar3"></span>
+        </div>
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="images/restaurant-logo_medium.png" alt="check it correctly" id="logo">
+                <h2>david chu's china bistro</h2><br>
+            </div>
+            <ul class="nav-items">
+                <li id="nav-home"><a href="#">home</a></li>
+                <li><a href="#" onclick="$xhttp.loadMenuCategories();">menu</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#" onclick="$xhttp.loadaward();">awards</a></li>
+                <li id="phone-no" class="fa-solid fa-phone ficon "><a href="#">410-602-5008</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main id="main-contentfly">
+        <div class="container">
+            <div class="main-img">
+                <img src="images/jumbotron_1200.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <div class="info-cards">
+        <div class="container nav-container">
+            <div class="card col-one">
+                <a href="#" onclick="$xhttp.loadMenuCategories();"><img src="images/menu-tile.jpg" alt="">
+                <h2>menu</h2>
+            </a>
+            </div>
+            <div class="card col-two">
+                <a href="#" onclick="$xhttp.loadSplcategories()"><img src="images/menu-tile.jpg" alt="">
+                <h2>specials</h2>
+            </a>
+
+            </div>
+            <div class="card col-three">
+                <!-- <img src="images/menu-tile.jpg" alt=""> -->
+                <a href="https://goo.gl/maps/7iuzDCYdtZwbAPN56">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6750632316202!2d-76.7138767855055!3d39.36359442693561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sin!4v1673529360023!5m2!1sen!2sin"
+                        width="360" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <h2>map</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="main-content" class="container"></div> -->
+
+    <footer>
+        <div class="container nav-container">
+
+            <div class=" footer-cards time">
+                <h2>hours:</h2>
+                <p>sun-thu:11:15am - 10:30pm<br>fri:11:15am - 2:30pm <br>saturday closed</p>
+
+            </div>
+
+            <div class=" footer-cards adress">
+                <h2>address:</h2>
+                <p>7105 reisterstown road <br> baltimore,MD 21215 </p>
+                <p id="green-txt">*delivery area within 3-4 miles,with minimum order of $20 plus $3 charge for all
+                    deliveries.</p>
+
+            </div>
+
+            <div class=" footer-cards quote">
+                <p>" the best chinese restaurent i've been to! and that's saying a lot,since i've been to many!"</p>
+
+                <p>" amazing food!great services! couldn't ask for more! i'll be back again and again."</p>
+            </div>
+        </div>
+        <div class="footer-txt">&copy; copyright david chu's china bistro 2022 |admin</div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
